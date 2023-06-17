@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registar Form</title>
+    <style>
+        th,td{
+            font-size: 60px;
+            
+        }
+        #name,#email,#password,#phone,#Languages,#zipcode,#about,#submit{
+            width: 100%;
+            height: 70px;
+            font-size:60px;
+        }
+        #checkbox{
+            width: 100%;
+            height:50px;
+            align-content: right;
+        }
+        
+
+
+       
+    </style>
+    
+</head>
+<body style="background-color: aqua;">
+    <table align="center" border="2px" cellpadding="10px" cellspacing="10px" style="border-collapse: collapse;">
+        <tr>
+            <th colspan="2"><h1>Register Form</h1></th>
+        </tr>
+        
+        <tr>
+                <form class="register">
+                    <tr>
+                        <th><label>Name</label></th>
+                        <td><input type="text" id="name" name="name" placeholder="Enter Your Name" required> </td>
+                    </tr>
+                    <tr>
+                        <th><label>Email</label></th>
+                        <td><input type="email"id="email" name="email" placeholder="Enter Your Email" required></td>
+                    </tr>
+                    <tr>
+                       <th><label>Password</label></th>
+                       <td><input type="password" id="password" name="password" placeholder="Enter Password" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>phone number</label></th>
+                        <td><input type="number" id="phone"  name="phone" placeholder="Enter Number" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>Gender</label></th>
+                        <td>&nbsp;&nbsp;Male :<input type="checkbox" id="checkbox" name="male"> &nbsp; female: <input type="checkbox" id="checkbox" name="female">&nbsp; Other's:<input type="checkbox" id="checkbox" name="others"></td>    
+                    </tr>
+                    <tr>
+                        <th> <label>Languages</label></th>
+                        <td> <select required id="Languages">
+                        <option value="">Language</option>
+                        <option value="1">English</option>
+                        <option value="2">Telugu</option>
+                        <option value="3">Hindi</option>
+                        <option value="4">German</option>
+                        <option value="5">Korean</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <th><label>Zip Code</label></th>
+                        <td><input type="number" id="zipcode" name="zip code" ></td>
+                    </tr>
+                    <tr>
+                        <th><label>About</label></th>
+                        <td><textarea name= "about"  id="about"col="10" row="10" placeholder="tell about yourself"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><input type="submit" id="submit" value="Register" href=""></th>
+                    </tr>
+                
+                </form>
+            </td>
+        </tr>
+    </table>
